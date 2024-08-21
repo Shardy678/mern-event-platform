@@ -17,7 +17,8 @@ function EventList() {
             <ul>
                 {events.map(event => (
                     <li key={event._id}>
-                        <h2>{event.title}</h2>
+                        <a href={`/events/${event._id}`}><h2>{event.title}</h2></a>
+                        <img src={event.image} alt="" />
                         <p>{event.description}</p>
                         <p>{event.location}</p>
                     </li>
