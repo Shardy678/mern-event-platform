@@ -13,7 +13,8 @@ const getRandomImage = async () => {
             params: {
                 client_id: 'RxIH3NClIyowOZvGLYWvfdkTkfoLT0CUBDyHTbPIukU',
                 query: 'event',
-                count: 1
+                count: 1,
+                orientation: 'landscape'
             }
         });
         return response.data[0].urls.thumb;

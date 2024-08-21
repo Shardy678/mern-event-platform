@@ -2,17 +2,50 @@ const express = require('express');
 const router = express.Router();
 const Event = require('../models/Event');
 
-// GET all events
+router.get('/:id', async (req, res) => {
+    const eventId = req.params.id;
+    try {
+        const event = await Event.findById(eventId);
+        if (event) {
+            res.json(event);
+        } else {
+            res.status(404).json({ message: 'Event not found' });
+        }
+    } catch (err) {
+        res.status(500).json({ message: err.message });
+    }
+});
+
+router.put('/:id', async (req,res) => {
+    const eventId = req.params.id
+    const { title, description, location } = req.body;
+    try {
+        const event = await Event.findByIdAndUpdate(
+            eventId,
+            { title, description, location },
+            { new: true, runValidators: true }
+        )
+        if (event) {
+            res.json(event);
+        } else {
+            res.status(404).json({ message: 'Event not found' });
+        }
+    } catch (err) {
+        res.status(500).json({ message: err.message });
+    }
+})
+
+
 router.get('/', async (req, res) => {
     try {
         const events = await Event.find();
+        console.log(`GET request received`)
         res.json(events);
     } catch (err) {
         res.status(500).json({ message: err.message });
     }
 });
 
-// POST a new event
 router.post('/', async (req, res) => {
     const event = new Event({
         title: req.body.title,
