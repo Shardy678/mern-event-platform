@@ -1,0 +1,1 @@
+## images not showing correctly after manual event creation. fix needed.

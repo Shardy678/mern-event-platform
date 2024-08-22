@@ -34,34 +34,47 @@ export default function LoginPage() {
     const handlePasswordChange = (e) => setPassword(e.target.value);
     
     return (
-        <>
-        <h1>Log in</h1>
-        <form onSubmit={login}>
-            <div>
-                <label htmlFor="email">Email: </label>
-                <input 
-                    type="email" 
-                    id="email" 
-                    name="email" 
-                    value={email} 
-                    onChange={handleEmailChange} 
-                    required 
-                />
+        <div className="flex items-center justify-center min-h-screen bg-gray-100">
+            <div className="w-full max-w-md p-8 space-y-6 bg-white rounded-lg shadow-md">
+                <h1 className="text-2xl font-bold text-center text-gray-800">Log in</h1>
+                <form onSubmit={login} className="space-y-4">
+                    <div>
+                        <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                            Email:
+                        </label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            value={email} 
+                            onChange={handleEmailChange} 
+                            required 
+                            className="w-full px-3 py-2 mt-1 text-gray-900 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-indigo-500"
+                        />
+                    </div>
+                    <div>
+                        <label htmlFor="password" className="block text-sm font-medium text-gray-700">
+                            Password:
+                        </label>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password" 
+                            value={password} 
+                            onChange={handlePasswordChange} 
+                            required 
+                            className="w-full px-3 py-2 mt-1 text-gray-900 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-indigo-500"
+                        />
+                    </div>
+                    {error && <p className="text-sm text-red-600">{error}</p>}
+                    <button 
+                        type="submit" 
+                        className="w-full px-4 py-2 text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                    >
+                        Submit
+                    </button>
+                </form>
             </div>
-            <div>
-                <label htmlFor="password">Password: </label>
-                <input 
-                    type="password" 
-                    id="password" 
-                    name="password" 
-                    value={password} 
-                    onChange={handlePasswordChange} 
-                    required 
-                />
-            </div>
-            {error && <p style={{ color: 'red' }}>{error}</p>}
-            <button type="submit">Submit</button>
-        </form>
-    </>
+        </div>
     )
 }

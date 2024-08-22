@@ -1,38 +1,4 @@
-import React, {useState} from "react";
-import { useNavigate } from 'react-router-dom';
-import axios from "axios";
-
-export default function RegisterPage() {
-    const [email, setEmail] = useState('');
-    const [name, setName] = useState('');
-    const [password, setPassword] = useState('');
-    const [error, setError] = useState('');
-    const navigate = useNavigate();
-
-    const handleEmailChange = (e) => setEmail(e.target.value)
-    const handlePasswordChange = (e) => setPassword(e.target.value);
-    const handleNameChange = (e) => setName(e.target.value);
-
-    async function register(e) {
-        e.preventDefault()
-        try {
-            const response = await axios.post('http://localhost:5000/api/auth/register', {
-                name,
-                email,
-                password
-            })
-            const data = response.data
-            localStorage.setItem('token', data.token);
-            navigate('/'); 
-            alert('User created succesfully')
-        } catch (error) {
-            console.error(error)
-            const errorMessage = error.response?.data?.msg || 'Registration failed';
-            setError(errorMessage);
-            alert('Error: ' + errorMessage);
-        }
-    }
-
+export default function RegisterForm() {
     return (
         <div className="flex items-center justify-center min-h-screen bg-gray-100">
             <div className="w-full max-w-md p-8 space-y-6 bg-white rounded-lg shadow-md">
