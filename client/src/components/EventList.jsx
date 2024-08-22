@@ -1,6 +1,27 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
+function isTokenValid() {
+    const token = localStorage.getItem('token');
+
+    if (!token) {
+        return false;
+    }
+
+    try {
+        const decodedToken = JSON.parse(atob(token.split('.')[1]));
+        const currentTime = Math.floor(Date.now() / 1000); // Get current time in seconds
+
+        return decodedToken.exp > currentTime; // Check if token is expired
+    } catch (e) {
+        return false;
+    }
+}
+
+function logout() {
+    localStorage.removeItem('token');
+}
+
 function EventList() {
     const [events,setEvents] = useState([])
 
@@ -13,7 +34,10 @@ function EventList() {
     return (
         <div>
             <h1>Events</h1>
-            <a href="/add">Create New</a>
+            {!isTokenValid() && <a href="/login">Log in</a>}
+            {!isTokenValid() && <a href="/register">Register</a>}
+            {isTokenValid() && <a href='/' onClick={logout}>Log out</a>}
+            {isTokenValid() && <a href="/add">Create New</a>}
             <ul>
                 {events.map(event => (
                     <li key={event._id}>

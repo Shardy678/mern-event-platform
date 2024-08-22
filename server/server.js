@@ -14,6 +14,8 @@ mongoose.connect(process.env.MONGODB_URI)
   .catch(err => console.log(err));
 
 app.use('/api/events',require('./routes/events'))
+app.use('/api/auth', require('./routes/auth'));
+
 
 app.listen(port, ()=> {
     console.log(`Server listening on port ${port}`)

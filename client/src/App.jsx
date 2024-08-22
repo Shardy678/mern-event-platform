@@ -5,6 +5,8 @@ import AddEvent from './components/AddEvent';
 import ShowPage from './components/ShowPage';
 import DeletePage from './components/DeletePage'; 
 import EditPage from './components/EditPage'; 
+import LoginPage from './components/LoginPage';
+import RegisterPage from './components/RegisterPage';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <div className="App">
         <Routes>
           <Route path='/' element={<EventList />} />
+          <Route path='/login' element={<LoginPage />} />
+          <Route path='/register' element={<RegisterPage />} />
           <Route path='/add' element={<AddEvent />} />
           <Route path='/events/:id' element={<ShowPage />}/>
           <Route path='/events/:id/delete' element={<DeletePage />} />
