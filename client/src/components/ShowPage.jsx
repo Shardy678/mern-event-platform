@@ -1,33 +1,44 @@
 import React from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import CircleIcon from '@mui/icons-material/Circle';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
-export default function ShowPage() {
-    const { id } = useParams();
+export default function EventShowPage() {
+    const { id } = useParams(); // Get the event ID from the URL
+    const [event, setEvent] = useState(null);
+
+    useEffect(() => {
+        // Fetch the event details from the API
+        async function fetchEvent() {
+            try {
+                const response = await axios.get(`http://localhost:5000/api/events/${id}`);
+                setEvent(response.data);
+            } catch (error) {
+                console.error('Error fetching event:', error);
+            }
+        }
+        fetchEvent();
+    }, [id]);
+
+    if (!event) {
+        return <div>Loading...</div>;
+    }
+
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
-            <h1 className="text-4xl font-semibold text-gray-800 mb-6">Show Page for ID: {id}</h1>
-            
-            <div className="bg-white rounded-lg shadow-md p-6 w-full max-w-md">
-                <ul className="space-y-4">
-                    <li>
-                        <Link to='/' 
-                            className="block text-center text-blue-600 hover:text-blue-700 hover:underline bg-blue-100 rounded-lg py-2">
-                            Go Back
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to={`/events/${id}/edit`} 
-                            className="block text-center text-green-600 hover:text-green-700 hover:underline bg-green-100 rounded-lg py-2">
-                            Edit
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to={`/events/${id}/delete`} 
-                            className="block text-center text-red-600 hover:text-red-700 hover:underline bg-red-100 rounded-lg py-2">
-                            Delete
-                        </Link>
-                    </li>
-                </ul>
+        <div className="container mx-auto p-4">
+            <div className="bg-white shadow-md rounded-lg p-6">
+                <img className="object-cover rounded-lg w-full h-64 mb-4" src={event.image} alt={event.title} />
+                <h1 className="text-2xl sm:text-3xl font-bold mb-2">{event.title}</h1>
+                <p className="text-lg sm:text-xl mb-2">
+                    <CalendarMonthIcon sx={{paddingRight:'2px', color: 'gray'}}/>
+                    {event.date} 
+                    <CircleIcon sx={{fontSize: "0.5rem", color: 'gray'}}/> 
+                    {event.time}
+                </p>
+                <p className="text-lg sm:text-xl mb-4 text-gray-600">{event.location}</p>
+                <p className="text-base sm:text-lg">{event.description}</p>
             </div>
         </div>
     );

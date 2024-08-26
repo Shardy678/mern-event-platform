@@ -1,0 +1,231 @@
+[
+  {
+    "_id": {
+      "$oid": "66cc331b48f390618456b054"
+    },
+    "title": "Art Exhibition: Modern Marvels",
+    "date": "2024-09-15",
+    "time": "18:00",
+    "category": "Arts",
+    "location": "421 Spratley St, Birmingham, MO 64161",
+    "image": "https://images.unsplash.com/photo-1493106641515-6b5631de4bb9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2Mzc1MDd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ2NjYzMDR8&ixlib=rb-4.0.3&q=80&w=1080",
+    "description": "Explore a collection of contemporary artworks from various modern artists. This exhibition showcases innovative and thought-provoking pieces that push the boundaries of traditional art."
+  },
+  {
+    "_id": {
+      "$oid": "66cc331b48f390618456b055"
+    },
+    "title": "Jazz Night at the Park",
+    "date": "2024-09-16",
+    "time": "19:00",
+    "category": "Music",
+    "location": "421 Spratley St, Birmingham, MO 64161",
+    "image": "https://images.unsplash.com/photo-1561921651-e8130cfc3e61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2Mzc1MDd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ2NjYzMDR8&ixlib=rb-4.0.3&q=80&w=1080",
+    "description": "Enjoy a night of live jazz music in the park. Local and renowned jazz musicians will perform, creating a vibrant and relaxing atmosphere under the stars."
+  },
+  {
+    "_id": {
+      "$oid": "66cc331b48f390618456b056"
+    },
+    "title": "City Marathon",
+    "date": "2024-09-17",
+    "time": "08:00",
+    "category": "Sports",
+    "location": "421 Spratley St, Birmingham, MO 64161",
+    "image": "https://images.unsplash.com/photo-1484249170766-998fa6efe3c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2Mzc1MDd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ2NjYzMDV8&ixlib=rb-4.0.3&q=80&w=1080",
+    "description": "Participate in or watch the City Marathon. This event features a full marathon, half marathon, and 5K run, catering to runners of all levels. Experience the thrill and excitement of competitive running in the heart of the city."
+  },
+  {
+    "_id": {
+      "$oid": "66cc331b48f390618456b057"
+    },
+    "title": "Gourmet Food Festival",
+    "date": "2024-09-18",
+    "time": "12:00",
+    "category": "Food",
+    "location": "421 Spratley St, Birmingham, MO 64161",
+    "image": "https://images.unsplash.com/photo-1695712641569-05eee7b37b6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2Mzc1MDd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ2NjYzMDV8&ixlib=rb-4.0.3&q=80&w=1080",
+    "description": "Sample delicious dishes from top chefs and food vendors at the Gourmet Food Festival. This event features a variety of culinary delights, cooking demonstrations, and opportunities to meet and greet with renowned chefs."
+  },
+  {
+    "_id": {
+      "$oid": "66cc331b48f390618456b058"
+    },
+    "title": "Startup Networking Event",
+    "date": "2024-09-19",
+    "time": "17:00",
+    "category": "Business",
+    "location": "421 Spratley St, Birmingham, MO 64161",
+    "image": "https://images.unsplash.com/photo-1605224307451-c86d7093f375?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2Mzc1MDd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ2NjYzMDV8&ixlib=rb-4.0.3&q=80&w=1080",
+    "description": "Connect with fellow entrepreneurs and startup enthusiasts at the Startup Networking Event. This is a great opportunity to share ideas, seek advice, and explore potential collaborations with other innovative minds."
+  },
+  {
+    "_id": {
+      "$oid": "66cc331b48f390618456b059"
+    },
+    "title": "Tech Innovators Conference",
+    "date": "2024-09-20",
+    "time": "09:00",
+    "category": "Technology",
+    "location": "421 Spratley St, Birmingham, MO 64161",
+    "image": "https://images.unsplash.com/photo-1526666923127-b2970f64b422?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2Mzc1MDd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ2NjYzMDV8&ixlib=rb-4.0.3&q=80&w=1080",
+    "description": "Attend the Tech Innovators Conference to learn about the latest advancements in technology. Keynote speakers and industry leaders will present on emerging trends, innovative products, and the future of tech."
+  },
+  {
+    "_id": {
+      "$oid": "66cc331b48f390618456b05a"
+    },
+    "title": "Family Fun Day",
+    "date": "2024-09-21",
+    "time": "11:00",
+    "category": "Family",
+    "location": "421 Spratley St, Birmingham, MO 64161",
+    "image": "https://images.unsplash.com/photo-1473594659356-a404044aa2c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2Mzc1MDd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ2NjYzMDZ8&ixlib=rb-4.0.3&q=80&w=1080",
+    "description": "Bring the whole family for a day of fun activities and entertainment. Enjoy games, rides, crafts, and live performances designed to entertain kids and adults alike."
+  },
+  {
+    "_id": {
+      "$oid": "66cc331b48f390618456b05b"
+    },
+    "title": "Yoga and Wellness Workshop",
+    "date": "2024-09-22",
+    "time": "10:00",
+    "category": "Health",
+    "location": "421 Spratley St, Birmingham, MO 64161",
+    "image": "https://images.unsplash.com/photo-1588783344727-f67e17b45dfc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2Mzc1MDd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ2NjYzMDZ8&ixlib=rb-4.0.3&q=80&w=1080",
+    "description": "Join the Yoga and Wellness Workshop to enhance your physical and mental well-being. This session will include yoga practices, mindfulness techniques, and tips for maintaining a healthy lifestyle."
+  },
+  {
+    "_id": {
+      "$oid": "66cc331b48f390618456b05c"
+    },
+    "title": "Community Cleanup Drive",
+    "date": "2024-09-23",
+    "time": "09:00",
+    "category": "Community",
+    "location": "421 Spratley St, Birmingham, MO 64161",
+    "image": "https://images.unsplash.com/photo-1461709444300-a6217cec3dff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2Mzc1MDd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ2NjYzMDZ8&ixlib=rb-4.0.3&q=80&w=1080",
+    "description": "Participate in the Community Cleanup Drive to help beautify our local area. Volunteers will gather to clean up public spaces, promote environmental stewardship, and make a positive impact on the community."
+  },
+{
+  "_id": {
+    "$oid": "66cc331b48f390618456b073"
+  },
+  "title": "Parenting Workshop",
+  "date": "2024-10-25",
+  "time": "14:00",
+  "category": "Family",
+  "location": "1500 Elm St, San Francisco, CA 94102",
+  "image": "https://images.unsplash.com/photo-1530499789264-d85ec0181d45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2Mzc1MDd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ2NjYzMTF8&ixlib=rb-4.0.3&q=80&w=1080"
+},
+{
+  "_id": {
+    "$oid": "66cc331b48f390618456b074"
+  },
+  "title": "Digital Art Workshop",
+  "date": "2024-10-30",
+  "time": "11:00",
+  "category": "Arts",
+  "location": "800 Art Lane, Seattle, WA 98109",
+  "image": "https://images.unsplash.com/photo-1593794547573-e1d1e7022d77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2Mzc1MDd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ2NjYzMTF8&ixlib=rb-4.0.3&q=80&w=1080"
+},
+{
+  "_id": {
+    "$oid": "66cc331b48f390618456b075"
+  },
+  "title": "Wine and Dine Evening",
+  "date": "2024-11-15",
+  "time": "19:00",
+  "category": "Food",
+  "location": "500 Vine St, Napa, CA 94559",
+  "image": "https://images.unsplash.com/photo-1555685813-26c2305f0b41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2Mzc1MDd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ2NjYzMTF8&ixlib=rb-4.0.3&q=80&w=1080"
+},
+{
+  "_id": {
+    "$oid": "66cc331b48f390618456b076"
+  },
+  "title": "Local Startup Showcase",
+  "date": "2024-12-15",
+  "time": "16:00",
+  "category": "Business",
+  "location": "1200 Startup Blvd, Austin, TX 73301",
+  "image": "https://images.unsplash.com/photo-1555907892-d80b9cb0cf44?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2Mzc1MDd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ2NjYzMTF8&ixlib=rb-4.0.3&q=80&w=1080"
+},
+{
+  "_id": {
+    "$oid": "66cc331b48f390618456b077"
+  },
+  "title": "Annual Coding Bootcamp",
+  "date": "2024-11-30",
+  "time": "09:00",
+  "category": "Technology",
+  "location": "100 Code St, Boston, MA 02110",
+  "image": "https://images.unsplash.com/photo-1611626419520-d26f4b91b6ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2Mzc1MDd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ2NjYzMTF8&ixlib=rb-4.0.3&q=80&w=1080"
+},
+{
+  "_id": {
+    "$oid": "66cc331b48f390618456b078"
+  },
+  "title": "Photography Basics Workshop",
+  "date": "2024-12-20",
+  "time": "13:00",
+  "category": "Arts",
+  "location": "456 Lens Ave, Denver, CO 80203",
+  "image": "https://images.unsplash.com/photo-1581168723655-c55761c7083e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2Mzc1MDd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ2NjYzMTF8&ixlib=rb-4.0.3&q=80&w=1080"
+},
+{
+  "_id": {
+    "$oid": "66cc331b48f390618456b073"
+  },
+  "title": "Parenting Workshop",
+  "date": "2024-10-16",
+  "time": "13:00",
+  "category": "Family",
+  "location": "500 Oak St, Austin, TX 78701",
+  "image": "https://images.unsplash.com/photo-1533209336733-e26758b2c07f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2Mzc1MDd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ2NjYzMTF8&ixlib=rb-4.0.3&q=80&w=1080"
+},
+{
+  "_id": {
+    "$oid": "66cc331b48f390618456b074"
+  },
+  "title": "Web Development Seminar",
+  "date": "2024-10-20",
+  "time": "10:00",
+  "category": "Technology",
+  "location": "3300 University Ave, Denver, CO 80210",
+  "image": "https://images.unsplash.com/photo-1593697555931-056cf6e2d4cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2Mzc1MDd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ2NjYzMTF8&ixlib=rb-4.0.3&q=80&w=1080"
+},
+{
+  "_id": {
+    "$oid": "66cc331b48f390618456b075"
+  },
+  "title": "Comedy Night",
+  "date": "2024-10-25",
+  "time": "21:00",
+  "category": "Entertainment",
+  "location": "150 W 4th St, Nashville, TN 37203",
+  "image": "https://images.unsplash.com/photo-1560854271-4a4f79d929f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2Mzc1MDd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ2NjYzMTF8&ixlib=rb-4.0.3&q=80&w=1080"
+},
+{
+  "_id": {
+    "$oid": "66cc331b48f390618456b076"
+  },
+  "title": "Cooking Class",
+  "date": "2024-11-15",
+  "time": "18:00",
+  "category": "Food",
+  "location": "400 Culinary Ave, Los Angeles, CA 90001",
+  "image": "https://images.unsplash.com/photo-1543342315-1f70c0f3e257?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2Mzc1MDd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ2NjYzMTF8&ixlib=rb-4.0.3&q=80&w=1080"
+},
+{
+  "_id": {
+    "$oid": "66cc331b48f390618456b077"
+  },
+  "title": "Theater Performance",
+  "date": "2024-11-30",
+  "time": "19:00",
+  "category": "Arts",
+  "location": "123 Theater Ln, Seattle, WA 98101",
+  "image": "https://images.unsplash.com/photo-1560847731-8be7d6459f6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2Mzc1MDd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ2NjYzMTF8&ixlib=rb-4.0.3&q=80&w=1080"
+}
+]

@@ -40,9 +40,20 @@ router.put('/:id', async (req,res) => {
 
 router.get('/', async (req, res) => {
     try {
-        const events = await Event.find().populate('createdBy','name');
-        console.log(`GET request received`)
-        res.json(events);
+        const { category, title } = req.query; 
+        let filter = {}; 
+
+        if (category && category !== 'All') {
+            filter.category = category;
+        }
+
+        if (title) {
+            filter.title = { $regex: new RegExp(title, 'i') }; 
+        }
+
+        const events = await Event.find(filter).populate('createdBy', 'name');
+
+        res.json({events});
     } catch (err) {
         res.status(500).json({ message: err.message });
     }

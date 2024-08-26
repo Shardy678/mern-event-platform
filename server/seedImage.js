@@ -17,7 +17,7 @@ const getRandomImage = async (query) => {
                 orientation: 'landscape'
             }
         });
-        return response.data[0].urls.thumb;
+        return response.data[0].urls.regular;
     } catch (err) {
         console.error('Error fetching image from Unsplash:', err);
         return '';
