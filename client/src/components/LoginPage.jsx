@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import { useNavigate } from 'react-router-dom';
 import axios from "axios";
+import LongButton from "./LongButton";
 
 export default function LoginPage() {
     const [email, setEmail] = useState('');
@@ -49,7 +50,7 @@ export default function LoginPage() {
                             value={email} 
                             onChange={handleEmailChange} 
                             required 
-                            className="w-full px-3 py-2 mt-1 text-gray-900 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-indigo-500"
+                            className="w-full px-3 py-2 mt-1 text-gray-900 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-pink-400"
                         />
                     </div>
                     <div>
@@ -63,16 +64,12 @@ export default function LoginPage() {
                             value={password} 
                             onChange={handlePasswordChange} 
                             required 
-                            className="w-full px-3 py-2 mt-1 text-gray-900 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-indigo-500"
+                            className="w-full px-3 py-2 mt-1 text-gray-900 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-pink-400"
                         />
                     </div>
                     {error && <p className="text-sm text-red-600">{error}</p>}
-                    <button 
-                        type="submit" 
-                        className="w-full px-4 py-2 text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                    >
-                        Submit
-                    </button>
+                    <LongButton type="submit" text={'Log in'}> 
+                    </LongButton>
                 </form>
             </div>
         </div>

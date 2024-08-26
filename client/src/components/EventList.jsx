@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Event from './Event'
+import Button from './Button';
+import Container from './Container';
 function isTokenValid() {
     const token = localStorage.getItem('token');
 
@@ -35,10 +37,9 @@ function EventList() {
     },[])
 
     return (
-        <div className="min-h-screen bg-gray-100">
+        <Container>
             <div className="mx-auto p-8">
                 <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">Events</h1>
-                
                 <div className="flex justify-center space-x-4 mb-6">
                     {!isTokenValid() && (
                         <>
@@ -58,40 +59,30 @@ function EventList() {
                     )}
                     {isTokenValid() && (
                         <>
-                            <a 
-                                href="/" 
-                                onClick={logout} 
-                                className="px-4 py-2 text-white bg-red-600 rounded-lg hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
-                            >
-                                Log out
-                            </a>
-                            <a 
-                                href="/add" 
-                                className="px-4 py-2 text-white bg-green-600 rounded-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
-                            >
-                                Create New
-                            </a>
+                            <a href="/" onClick={logout} ><Button color={'red'} text={'Log out'}/></a>
+                            <a href="/add"><Button color={'green'} text={'Create New'}/></a>
                         </>
                     )}
                 </div>
 
-                <ul className="flex flex-wrap gap-6">
-                    {events.map(event => (
-                        <li key={event._id} className="">
-                            <Event 
-                                id={event._id} 
-                                title={event.title} 
-                                image={event.image} 
-                                description={event.description} 
-                                location={event.location} 
-                                createdBy={event.createdBy ? event.createdBy.name : 'Unknown'} 
-                                className="h-full bg-white rounded-lg shadow-md p-4"
-                            />
-                        </li>
-                    ))}
-                </ul>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-6">
+  {events.map((event) => (
+    <li key={event._id}>
+      <Event
+        id={event._id}
+        title={event.title}
+        image={event.image}
+        location={event.location}
+        date={event.date}
+        time={event.time}
+        className="h-full bg-white rounded-lg shadow-md p-4"
+      />
+    </li>
+  ))}
+</ul>
+
             </div>
-        </div>
+        </Container>
     )
 }
 

@@ -1,0 +1,282 @@
+[
+    {
+    "title": "Art Exhibition: Modern Marvels",
+    "date": "2024-09-15",
+    "time": "18:00",
+    "category": "Arts",
+    "location": "421 Spratley St, Birmingham, MO 64161"
+},
+{
+    "title": "Jazz Night at the Park",
+    "date": "2024-09-16",
+    "time": "19:00",
+    "category": "Music",
+    "location": "421 Spratley St, Birmingham, MO 64161"
+},
+{
+    "title": "City Marathon",
+    "date": "2024-09-17",
+    "time": "08:00",
+    "category": "Sports",
+    "location": "421 Spratley St, Birmingham, MO 64161"
+},
+{
+    "title": "Gourmet Food Festival",
+    "date": "2024-09-18",
+    "time": "12:00",
+    "category": "Food",
+    "location": "421 Spratley St, Birmingham, MO 64161"
+},
+{
+    "title": "Startup Networking Event",
+    "date": "2024-09-19",
+    "time": "17:00",
+    "category": "Business",
+    "location": "421 Spratley St, Birmingham, MO 64161"
+},
+{
+    "title": "Tech Innovators Conference",
+    "date": "2024-09-20",
+    "time": "09:00",
+    "category": "Technology",
+    "location": "421 Spratley St, Birmingham, MO 64161"
+},
+{
+    "title": "Family Fun Day",
+    "date": "2024-09-21",
+    "time": "11:00",
+    "category": "Family",
+    "location": "421 Spratley St, Birmingham, MO 64161"
+},
+{
+    "title": "Yoga and Wellness Workshop",
+    "date": "2024-09-22",
+    "time": "10:00",
+    "category": "Health",
+    "location": "421 Spratley St, Birmingham, MO 64161"
+},
+{
+    "title": "Community Cleanup Drive",
+    "date": "2024-09-23",
+    "time": "09:00",
+    "category": "Community",
+    "location": "421 Spratley St, Birmingham, MO 64161"
+},
+{
+    "title": "Public Speaking 101",
+    "date": "2024-09-24",
+    "time": "14:00",
+    "category": "Education",
+    "location": "421 Spratley St, Birmingham, MO 64161"
+},
+{
+    "title": "Local Artists' Showcase",
+    "date": "2024-10-01",
+    "time": "16:00",
+    "category": "Arts",
+    "location": "421 Spratley St, Birmingham, MO 64161"
+},
+{
+    "title": "Indie Rock Concert",
+    "date": "2024-10-02",
+    "time": "19:30",
+    "category": "Music",
+    "location": "421 Spratley St, Birmingham, MO 64161"
+},
+{
+    "title": "Basketball Tournament",
+    "date": "2024-10-03",
+    "time": "13:00",
+    "category": "Sports",
+    "location": "421 Spratley St, Birmingham, MO 64161"
+},
+{
+    "title": "Farmers' Market Feast",
+    "date": "2024-10-04",
+    "time": "10:00",
+    "category": "Food",
+    "location": "421 Spratley St, Birmingham, MO 64161"
+},
+{
+    "title": "Entrepreneurs Meet & Greet",
+    "date": "2024-10-05",
+    "time": "18:00",
+    "category": "Business",
+    "location": "421 Spratley St, Birmingham, MO 64161"
+},
+{
+    "title": "Robotics Workshop",
+    "date": "2024-10-06",
+    "time": "15:00",
+    "category": "Technology",
+    "location": "421 Spratley St, Birmingham, MO 64161"
+},
+{
+    "title": "Picnic in the Park",
+    "date": "2024-10-07",
+    "time": "11:30",
+    "category": "Family",
+    "location": "421 Spratley St, Birmingham, MO 64161"
+},
+{
+    "title": "Mindfulness Meditation Session",
+    "date": "2024-10-08",
+    "time": "09:00",
+    "category": "Health",
+    "location": "421 Spratley St, Birmingham, MO 64161"
+},
+{
+    "title": "Neighborhood Watch Meeting",
+    "date": "2024-10-09",
+    "time": "18:30",
+    "category": "Community",
+    "location": "421 Spratley St, Birmingham, MO 64161"
+},
+{
+    "title": "STEM Education Expo",
+    "date": "2024-10-10",
+    "time": "10:00",
+    "category": "Education",
+    "location": "421 Spratley St, Birmingham, MO 64161"
+},
+{
+    "title": "Coding Workshop",
+    "date": "2024-11-21",
+    "time": "15:00",
+    "category": "Technology",
+    "location": "819 N Main St, Alpharetta, GA 30009"
+},
+{
+    "title": "Charity Run",
+    "date": "2024-09-10",
+    "time": "08:00",
+    "category": "Community",
+    "location": "233 Elm St, Springfield, IL 62704"
+},
+{
+    "title": "Guitar Lessons",
+    "date": "2024-10-11",
+    "time": "11:00",
+    "category": "Music",
+    "location": "410 N First St, Fort Worth, TX 76102"
+},
+{
+    "title": "Startup Meetup",
+    "date": "2024-12-01",
+    "time": "16:00",
+    "category": "Business",
+    "location": "55 Main St, San Jose, CA 95113"
+},
+{
+    "title": "Fitness Bootcamp",
+    "date": "2024-09-05",
+    "time": "06:30",
+    "category": "Health",
+    "location": "980 Market St, Philadelphia, PA 19107"
+},
+{
+    "title": "Family Picnic",
+    "date": "2024-10-15",
+    "time": "12:00",
+    "category": "Family",
+    "location": "100 Park Ave, New York, NY 10016"
+},
+{
+    "title": "Art Exhibition",
+    "date": "2024-11-23",
+    "time": "10:00",
+    "category": "Arts",
+    "location": "321 Gallery Dr, Miami, FL 33133"
+},
+{
+    "title": "Jazz Festival",
+    "date": "2024-10-19",
+    "time": "18:00",
+    "category": "Music",
+    "location": "700 E Third St, Charlotte, NC 28202"
+},
+{
+    "title": "Tech Conference",
+    "date": "2024-09-20",
+    "time": "09:00",
+    "category": "Technology",
+    "location": "4000 City Line Ave, Philadelphia, PA 19131"
+},
+{
+    "title": "Baking Class",
+    "date": "2024-12-07",
+    "time": "14:00",
+    "category": "Food",
+    "location": "1500 State St, Chicago, IL 60616"
+},
+{
+    "title": "Basketball Tournament",
+    "date": "2024-11-12",
+    "time": "10:00",
+    "category": "Sports",
+    "location": "2175 Campus Dr, Evanston, IL 60208"
+},
+{
+    "title": "Parenting Seminar",
+    "date": "2024-10-25",
+    "time": "13:00",
+    "category": "Family",
+    "location": "225 King St, Charleston, SC 29401"
+},
+{
+    "title": "Organic Food Fair",
+    "date": "2024-09-18",
+    "time": "10:00",
+    "category": "Food",
+    "location": "45 Apple St, Burlington, VT 05401"
+},
+{
+    "title": "Painting Workshop",
+    "date": "2024-11-05",
+    "time": "14:00",
+    "category": "Arts",
+    "location": "200 Artist Way, Savannah, GA 31401"
+},
+{
+    "title": "Startup Pitch Night",
+    "date": "2024-09-22",
+    "time": "19:00",
+    "category": "Business",
+    "location": "750 Innovation Blvd, Pittsburgh, PA 15222"
+},
+{
+    "title": "Yoga Retreat",
+    "date": "2024-10-10",
+    "time": "08:30",
+    "category": "Health",
+    "location": "100 Serenity Ln, Sedona, AZ 86336"
+},
+{
+    "title": "Community Cleanup",
+    "date": "2024-09-29",
+    "time": "09:00",
+    "category": "Community",
+    "location": "50 River Rd, Minneapolis, MN 55414"
+},
+{
+    "title": "Cybersecurity Workshop",
+    "date": "2024-10-08",
+    "time": "16:00",
+    "category": "Education",
+    "location": "600 University Ave, Madison, WI 53706"
+},
+{
+    "title": "Poetry Slam",
+    "date": "2024-11-30",
+    "time": "20:00",
+    "category": "Arts",
+    "location": "123 Poetry Ln, Denver, CO 80202"
+},
+{
+    "title": "Food Truck Festival",
+    "date": "2024-09-15",
+    "time": "11:00",
+    "category": "Food",
+    "location": "825 Foodie Blvd, Austin, TX 78701"
+}
+]    
