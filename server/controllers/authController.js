@@ -2,71 +2,70 @@ const jwt = require('jsonwebtoken')
 const User = require('../models/User')
 const { validationResult } = require('express-validator')
 
-exports.register = async (req,res) => {
-    const errors = validationResult(req)
-    if (!errors.isEmpty()) {
-        return res.status(400).json({ errors: errors.array() })
+exports.register = async (req, res) => {
+  const errors = validationResult(req)
+  if (!errors.isEmpty()) {
+    return res.status(400).json({ errors: errors.array() })
+  }
+
+  const { name, email, password } = req.body
+
+  try {
+    let user = await User.findOne({ email })
+    if (user) {
+      return res.status(400).json({ msg: 'User already exists' })
     }
 
-    const { name, email, password } = req.body
+    user = new User({ name, email, password })
+    await user.save()
 
-    try {
-        let user = await User.findOne({ email })
-        if (user) {
-            return res.status(400).json({ msg: 'User already exists' });
-        }
+    const payload = { user: { id: user.id } }
 
-        user = new User({ name, email, password })
-        await user.save()
+    const token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '1h' })
 
-        const payload = { user: { id: user.id } }
-
-        const token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '1h' })
-
-        res.json({ token })
-    } catch (err) {
-        console.error(err.message)
-        res.status(500).send("Server Error")
-    }
+    res.json({ token })
+  } catch (err) {
+    console.error(err.message)
+    res.status(500).send('Server Error')
+  }
 }
 
 exports.login = async (req, res) => {
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-        return res.status(400).json({ errors: errors.array() });
+  const errors = validationResult(req)
+  if (!errors.isEmpty()) {
+    return res.status(400).json({ errors: errors.array() })
+  }
+
+  const { email, password } = req.body
+
+  try {
+    let user = await User.findOne({ email })
+    if (!user) {
+      return res.status(400).json({ msg: 'Invalid Credentials' })
     }
 
-    const { email, password } = req.body;
-
-    try {
-        let user = await User.findOne({ email });
-        if (!user) {
-            return res.status(400).json({ msg: 'Invalid Credentials' });
-        }
-
-        const isMatch = await user.matchPassword(password);
-        if (!isMatch) {
-            return res.status(400).json({ msg: 'Invalid Credentials' });
-        }
-
-        const payload = { user: { id: user.id } };
-
-        const token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '1h' });
-
-        res.json({ token });
-    } catch (err) {
-        console.error(err.message);
-        res.status(500).send('Server error');
+    const isMatch = await user.matchPassword(password)
+    if (!isMatch) {
+      return res.status(400).json({ msg: 'Invalid Credentials' })
     }
-};
 
+    const payload = { user: { id: user.id } }
+
+    const token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '1h' })
+
+    res.json({ token })
+  } catch (err) {
+    console.error(err.message)
+    res.status(500).send('Server error')
+  }
+}
 
 exports.getUser = async (req, res) => {
-    try {
-        const user = await User.findById(req.user.id).select('-password');
-        res.json(user);
-    } catch (err) {
-        console.error(err.message);
-        res.status(500).send('Server error');
-    }
-};
+  try {
+    const user = await User.findById(req.user.id).select('-password')
+    res.json(user)
+  } catch (err) {
+    console.error(err.message)
+    res.status(500).send('Server error')
+  }
+}
